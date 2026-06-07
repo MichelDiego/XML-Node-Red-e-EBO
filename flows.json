@@ -1,0 +1,95 @@
+[
+    {
+        "id": "94b2ba829873df33",
+        "type": "inject",
+        "z": "76d6ceba5a3e3ac1",
+        "name": "",
+        "props": [],
+        "repeat": "20",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 380,
+        "wires": [
+            [
+                "19da069121ca806e"
+            ]
+        ]
+    },
+    {
+        "id": "19da069121ca806e",
+        "type": "http request",
+        "z": "76d6ceba5a3e3ac1",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.8.11/MonVariaveis.dxml",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 360,
+        "y": 380,
+        "wires": [
+            [
+                "1b746b4653e59d20"
+            ]
+        ]
+    },
+    {
+        "id": "1b746b4653e59d20",
+        "type": "xml",
+        "z": "76d6ceba5a3e3ac1",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 530,
+        "y": 380,
+        "wires": [
+            [
+                "ee79072a9f3ec378"
+            ]
+        ]
+    },
+    {
+        "id": "ee79072a9f3ec378",
+        "type": "modbus-server",
+        "z": "76d6ceba5a3e3ac1",
+        "name": "",
+        "logEnabled": false,
+        "hostname": "0.0.0.0",
+        "serverPort": 10502,
+        "responseDelay": 100,
+        "delayUnit": "ms",
+        "coilsBufferSize": "100",
+        "holdingBufferSize": "100",
+        "inputBufferSize": "100",
+        "discreteBufferSize": "100",
+        "showErrors": false,
+        "showStatusActivities": true,
+        "x": 700,
+        "y": 380,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8639c7853ec0a084",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-modbus": "5.45.2"
+        }
+    }
+]
