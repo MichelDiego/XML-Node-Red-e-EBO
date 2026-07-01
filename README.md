@@ -14,7 +14,7 @@ Muitos equipamentos de infraestrutura expõem suas variáveis operacionais apena
 
 Em vez de depender de gateways físicos comerciais de alto custo, este fluxo utiliza o **Node-RED** para atuar como uma ponte bidirecional entre as camadas de TI e TA. O sistema realiza o *polling* dos dados web, trata as informações e as disponibiliza em um servidor Modbus local.
 
-### ⚙️ Arquitetura do Fluxo (Node-RED)
+### Arquitetura do Fluxo (Node-RED)
 
 O pipeline de dados opera em um ciclo contínuo de 20 segundos:
 
