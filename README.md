@@ -19,7 +19,7 @@ Em vez de depender de gateways físicos comerciais de alto custo, este fluxo uti
 O pipeline de dados opera em um ciclo contínuo de 20 segundos:
 
 1. **Trigger (Inject):** Um gatilho temporal inicia o ciclo de varredura a cada 20 segundos.
-2. **Polling de Dados (HTTP GET):** O sistema faz uma requisição diretamente ao IP do equipamento (ex: `http://192.168.8.11/MonVariaveis.dxml`) para capturar o arquivo de variáveis atualizado.
+2. **Polling de Dados (HTTP GET):** O sistema faz uma requisição diretamente ao IP do equipamento (ex: `http://192.168.x.xx/MonVariaveis.dxml`) para capturar o arquivo de variáveis atualizado.
 3. **Parsing e Tratamento (XML Node):** O payload em formato XML bruto é convertido estruturalmente para um objeto JavaScript (JSON) manipulável.
 4. **Servidor Modbus TCP (Modbus-Server):** O Node-RED instancia nativamente um servidor Modbus TCP operando na porta `10502`. As variáveis tratadas são injetadas nos registradores virtuais deste servidor.
 
