@@ -26,7 +26,7 @@
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://192.168.8.11/MonVariaveis.dxml",
+        "url": "http://192.168.x.xx/MonVariaveis.dxml",
         "tls": "",
         "persist": false,
         "proxy": "",
