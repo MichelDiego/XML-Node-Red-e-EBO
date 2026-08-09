@@ -69,7 +69,8 @@ Para replicar este ambiente e rodar o Gateway em seu servidor local:
 
 ##  Demonstração
 
-*(Adicione aqui uma captura de tela do fluxo no Node-RED e, se possível, uma tela do EBO consumindo os dados)*
+<img width="1408" height="768" alt="1780765775045 (1)" src="https://github.com/user-attachments/assets/fa9f8fcf-ad89-451d-b3fb-aaaeb9cc49cf" />
+
 
 ---
 
