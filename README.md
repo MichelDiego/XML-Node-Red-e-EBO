@@ -76,5 +76,5 @@ Para replicar este ambiente e rodar o Gateway em seu servidor local:
 
 ##  Autor
 
-**Michel Coutinho** Tecnólogo em Automação Industrial | Eletromecânica  
+**Michel Coutinho** Tecnólogo em Automação Industrial 
 Focado na convergência IT/OT e Automação Predial (BMS).
